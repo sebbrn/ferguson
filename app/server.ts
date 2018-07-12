@@ -1,8 +1,9 @@
 import express from 'express';
 import { HelloWorldController } from './controllers/hello-world.controller';
 
-let env = require('node-env-file');
-env(__dirname + './../.env');
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').load();
+}
 
 if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
     console.error('There are environment variables missing');
