@@ -10,5 +10,15 @@ Ferguson is a lovely countdown bot for Slack.\
 You can tell him your upcoming events.\
 He'll remind you when it's time to get nervous.
 
-## Anatomy
-Ferguson is built with Node.js.
+## Development Setup
+```
+npm install
+npm run-script dev-start
+```
+
+## Production Setup
+```
+npm install
+npm start
+```
+Run `npm run-script tsc` before `start` to transpile TypeScript to JavaScript.
