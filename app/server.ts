@@ -12,7 +12,7 @@ if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
 }
 
 const app: express.Application = express();
-const port: number = process.env.PORT || 3000;
+const port: number = +process.env.PORT || 3000;
 
 app.use('/hello', HelloWorldController);
 
