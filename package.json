@@ -1,0 +1,28 @@
+{
+  "name": "ferguson",
+  "version": "1.0.0",
+  "description": "A countdown bot for Slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebbrn/ferguson.git"
+  },
+  "author": {
+    "name": "Sebastian Brune",
+    "url": "https://github.com/sebbrn"
+  },
+  "contributors": [
+    {
+      "name": "Johannes Hollekamp",
+      "url": "https://github.com/00cc00"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebbrn/ferguson/issues"
+  },
+  "homepage": "https://github.com/sebbrn/ferguson#readme"
+}
