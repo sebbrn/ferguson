@@ -10,15 +10,11 @@ Ferguson is a lovely countdown bot for Slack.\
 You can tell him your upcoming events.\
 He'll remind you when it's time to get nervous.
 
-## Development Setup
-```
-npm install
-npm run-script dev-start
-```
-
-## Production Setup
+## Deployment
 ```
 npm install
 npm start
 ```
-Run `npm run-script tsc` before `start` to transpile TypeScript to JavaScript.
+
+## Heroku
+Currently deployed on [Heroku](https://ferguson-bot.herokuapp.com/hello)
