@@ -17,4 +17,4 @@ npm start
 ```
 
 ## Heroku
-Currently deployed on [Heroku](https://ferguson-bot.herokuapp.com/hello)
+Develop branch currently deployed on [Heroku](https://ferguson-bot.herokuapp.com/hello)
