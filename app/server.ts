@@ -12,12 +12,12 @@ if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
 }
 
 const app: express.Application = express();
-const port: number = 3000;
+const port: number = process.env.PORT || 3000;
 
 app.use('/hello', HelloWorldController);
 
 app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}/`);
+    console.log(`Listening on port:${port}/`);
 });
 
 function usage_tip() {
