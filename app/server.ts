@@ -1,5 +1,5 @@
 import express from 'express';
-import { HelloWorldController } from './controllers/hello-world.controller';
+import { HelloWorldController, OAuthController } from './controllers';
 
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').load();
@@ -15,6 +15,7 @@ const app: express.Application = express();
 const port = process.env.PORT || 3000;
 
 app.use('/hello', HelloWorldController);
+app.use('/oauth', OAuthController);
 
 app.listen(port, () => {
     console.error(`Listening on port:${port}/`);
