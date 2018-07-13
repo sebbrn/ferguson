@@ -11,7 +11,7 @@ You can tell him your upcoming events.\
 He'll remind you when it's time to get nervous.
 
 ### Add to your workspace
-Click the following button or visit *[Add to Slack](https://ferguson-bot.herokuapp.com/add-to-slack)* 
+Click the following button or visit *[Add to Slack](https://ferguson-bot.herokuapp.com/oauth/add-to-slack)* 
 to invite ferguson to come over to your workspace.
 
 <a href="https://slack.com/oauth/authorize?scope=bot&client_id=380321484643.398965748550">
