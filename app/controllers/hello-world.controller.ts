@@ -5,7 +5,7 @@ const router: Router = Router();
 
 // The / here corresponds to the route that the HelloWorldController
 // is mounted on in the server.ts file.
-// In this case it's /welcome
+// In this case it's /hello
 router.get('/', (req: Request, res: Response) => {
     res.send('Hello World!');
 });
