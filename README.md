@@ -18,3 +18,17 @@ npm start
 
 ## Heroku
 Develop branch currently deployed on [Heroku](https://ferguson-bot.herokuapp.com/hello)
+
+## Local development infos
+
+### Open a HTTP tunnel
+```
+npm install -g localtunnel
+lt --port 3000 --subdomain ferguson-bot
+```
+Once ferguson is running on your machine and the tunnel is open 
+he is available at <https://ferguson-bot.localtunnel.me/>
+
+### Environment variables
+Don't forget to make a copy of the `.env.example` file and ask the contributors with which values the variables have 
+to be filled.
