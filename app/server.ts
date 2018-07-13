@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').load();
 }
 
-if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
+if (!process.env.CLIENT_ID || !process.env.CLIENT_SECRET|| !process.env.PORT) {
     console.error('There are environment variables missing');
     usage_tip();
     //process.exit(1);
