@@ -41,3 +41,8 @@ Thumbs.db
 
 # Environment data
 .env
+
+.db
+.env
+components/routes/_*
+.sass-cache/*
