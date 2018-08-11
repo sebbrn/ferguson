@@ -21,8 +21,8 @@ module.exports = function(controller) {
               if (err) {
                 console.log(err);
               } else {
-                convo.say('I am a bot that has just joined your team');
-                convo.say('You must now /invite me to a channel so that I can be of use!');
+                convo.say('Burrr! Hey, I\'m Ferguson :grinning_face_with_star_eyes:');
+                convo.say('You can now /invite me to a channel so that I can be of use!');
               }
             });
         }
