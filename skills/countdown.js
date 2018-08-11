@@ -18,6 +18,9 @@ module.exports = function(controller) {
                 team.countdowns = [];
             }
 
+            if (!team.countdowns) {
+                team.countdowns = [];
+            }
             team.countdowns.push(newcountdown);
 
             controller.storage.teams.save(team, function(err,saved) {
