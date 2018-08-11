@@ -41,5 +41,4 @@ Once ferguson is running on your machine and the tunnel is open
 he is available at <https://ferguson-bot.localtunnel.me/>
 
 ### Environment variables
-Don't forget to make a copy of the `.env.example` file and ask the contributors with which values the variables have 
-to be filled.
+Don't forget to make a copy of the `.env.example` file, rename it to `.env` and ask the contributors with which values the variables have to be filled.
