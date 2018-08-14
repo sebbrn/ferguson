@@ -28,7 +28,7 @@ module.exports = function(controller) {
                 if (err) {
                     bot.reply(message, 'I experienced an error adding your countdown: ' + err);
                 } else {
-                    bot.reply('I added your countdown: ' + newcountdown)
+                    bot.reply(message, 'I added your countdown: ' + newcountdown)
                     bot.api.reactions.add({
                         name: 'thumbsup',
                         channel: message.channel,
