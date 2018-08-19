@@ -61,18 +61,18 @@ module.exports = function (controller) {
         let askedEventName = message.match[1];
         if (!askedEventName) {
             bot.reply(message, `I'm sorry, but I didn't catch the event name in your request :confused:`);
+        } else {
+            controller.storage.teams.get(message.team, function (err, team) {
+                if (!team) {
+                    bot.reply(message, `I'm sorry, but I haven't found your team :cry:`)
+                }
+                let askedEvent = team.events.find(event => event.name === askedEventName);
+                if (!askedEvent) {
+                    bot.reply(message, `I'm sorry, but I haven't found the event ${askedEventName} :white_frowning_face:`)
+                }
+                bot.reply(message, daysLeft(new Date(askedEvent.date)));
+            })
         }
-
-        controller.storage.teams.get(message.team, function (err, team) {
-            if (!team) {
-                bot.reply(message, `I'm sorry, but I haven't found your team :cry:`)
-            }
-            let askedEvent = team.events.find(event => event.name === askedEventName);
-            if (!askedEvent) {
-                bot.reply(message, `I'm sorry, but I haven't found the event ${askedEventName} :white_frowning_face:`)
-            }
-            bot.reply(message, daysLeft(new Date(askedEvent.date)));
-        })
     })
 
 };
