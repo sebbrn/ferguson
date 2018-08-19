@@ -69,8 +69,9 @@ module.exports = function (controller) {
                 let askedEvent = team.events.find(event => event.name === askedEventName);
                 if (!askedEvent) {
                     bot.reply(message, `I'm sorry, but I haven't found the event ${askedEventName} :white_frowning_face:`)
+                } else {
+                    bot.reply(message, daysLeft(new Date(askedEvent.date)));
                 }
-                bot.reply(message, daysLeft(new Date(askedEvent.date)));
             })
         }
     })
