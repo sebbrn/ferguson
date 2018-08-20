@@ -1,7 +1,7 @@
 <h1 align="center">Ferguson</h1>
 
 <p align="center">
-  <img width="250" src="low_poly_cat.jpg"><br>
+  <img width="250" src="public/images/low_poly_cat.jpg"><br>
   :point_up_2: This is Ferguson
 </p>
 
