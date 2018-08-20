@@ -37,9 +37,11 @@ You play little minigames like *"Who can drink the most shots in a minute?"* aga
 The one who wins the final game can call oneself an *Amazing Human Slash Genius*.
 
 <p align="center">
-    <br>
     <img src="public/images/human_slash_genius.gif" alt="Jake Peralta is an amazing detective-slash-genius">
 </p>
+
+See the [instructions](docs/games.md) for more information.
+
 
 ## Deployment
 ```
