@@ -36,7 +36,7 @@ It is based upon the playoff system.
 You play little minigames like *"Who can drink the most shots in a minute?"* against one other person and the winner is reaching the next round.
 The one who wins the final game can call oneself an *Amazing Human Slash Genius*.
 
-![Jake Peralta](https://getyarn.io/yarn-clip/a97229a5-3550-4f17-8e3b-80b4ce3b517a/gif)
+![Jake Peralta](https://y.yarn.co/a97229a5-3550-4f17-8e3b-80b4ce3b517a_text_hi.gif)
 
 ## Deployment
 ```
