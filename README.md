@@ -11,7 +11,7 @@ Ferguson is a lovely housecat for Slack.
 ### Features
 - [x] Count the days to an upcoming event (see *[Countdown](#Countdown)* section)
 - [ ] Remind the team if an event comes near
-- [ ] Implement funny games (see *[Games](#games)* section)
+- [ ] Play a playoff-based tournament with your friends (see *[Games](#games)* section)
 
 
 ### Add to your workspace
@@ -36,7 +36,10 @@ It is based upon the playoff system.
 You play little minigames like *"Who can drink the most shots in a minute?"* against one other person and the winner is reaching the next round.
 The one who wins the final game can call oneself an *Amazing Human Slash Genius*.
 
-![Jake Peralta](https://getyarn.io/yarn-clip/a97229a5-3550-4f17-8e3b-80b4ce3b517a/gif)
+<p align="center">
+    <br>
+    <img src="public/images/human_slash_genius.gif" alt="Jake Peralta is an amazing detective-slash-genius">
+</p>
 
 ## Deployment
 ```
