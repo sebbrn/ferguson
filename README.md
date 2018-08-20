@@ -50,4 +50,4 @@ npm start
 ```
 
 ## Heroku
-Develop branch currently deployed on [Heroku](https://ferguson-bot.herokuapp.com)
+`Master` branch currently deployed on [Heroku](https://ferguson-bot.herokuapp.com)
