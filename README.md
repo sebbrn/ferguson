@@ -11,6 +11,7 @@ Ferguson is a lovely housecat for Slack.
 ### Features
 - [x] Count the days to an upcoming event (see *[Countdown](#Countdown)* section)
 - [ ] Remind the team if an event comes near
+- [x] Start an election
 - [ ] Play a playoff-based tournament with your friends (see *[Games](#games)* section)
 
 
@@ -28,6 +29,10 @@ to invite him to your workspace.
 ## Countdown
 
 You can tell Ferguson your upcoming events and ask him to count the remaining days.
+
+## Voting
+
+With the command `Let's go!` you can tell Ferguson to start a new election. Your team members can then vote for one winner.
 
 ## Games
 
