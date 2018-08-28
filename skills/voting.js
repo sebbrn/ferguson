@@ -15,7 +15,7 @@ module.exports = function (controller) {
         count = 0;
 
         bot.reply(message, {
-            "text": "Okay, let's vote for the next one!",
+            "text": "Okay, let's vote for the next one! There are 10 votes. But you can vote multiple times, so be quick!",
             "response_type": "in_channel",
             "attachments": [
                 {
@@ -43,7 +43,7 @@ module.exports = function (controller) {
         } else {
             result[message.actions[0].selected_options[0].value]++;
         }
-        if (count < 2) {
+        if (count < 10) {
             count++;
         } else {
             bot.replyInteractive(message, {
