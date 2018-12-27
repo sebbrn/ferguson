@@ -11,7 +11,7 @@ Ferguson is a lovely housecat for Slack.
 ### Features
 - [x] Count the days to an upcoming event (see *[Countdown](#Countdown)* section)
 - [ ] Remind the team if an event comes near
-- [x] Start an election
+- [x] Start an election to vote for a winner
 - [ ] Play a playoff-based tournament with your friends (see *[Games](#games)* section)
 
 
@@ -32,7 +32,7 @@ You can tell Ferguson your upcoming events and ask him to count the remaining da
 
 ## Voting
 
-With the command `Let's go!` you can tell Ferguson to start a new election. Your team members can then vote for one winner.
+With the command `Let's go!` you can tell Ferguson to start a new election inside the current channel. Your team members can then vote for one winner.
 
 ## Games
 
@@ -54,5 +54,5 @@ npm install
 npm start
 ```
 
-## Heroku
+## Hosting
 `Master` branch currently deployed on [Heroku](https://ferguson-bot.herokuapp.com)
