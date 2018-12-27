@@ -9,8 +9,8 @@
 Ferguson is a lovely housecat for Slack.
 
 ### Features
-- [x] Count the days to an upcoming event (see *[Countdown](#Countdown)* section)
-- [ ] Remind the team if an event comes near
+- [x] Count the days to an upcoming event (see *[Countdown](#countdown)* section)
+- [ ] Remind the team if an event comes near (see *[Voting](#voting)* section)
 - [x] Start an election to vote for a winner
 - [ ] Play a playoff-based tournament with your friends (see *[Games](#games)* section)
 
@@ -29,6 +29,8 @@ to invite him to your workspace.
 ## Countdown
 
 You can tell Ferguson your upcoming events and ask him to count the remaining days.
+- Add a new event: `Hey @Ferguson, add a new event Urlaub on DD-MM-YYYY please!` or anything similar (Botkit listens to specific keywoards, not the 100% right sequence)
+- Ask for the remaining time: `@Ferguson, how long is it til the event Urlaub?`
 
 ## Voting
 
