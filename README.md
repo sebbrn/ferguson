@@ -5,13 +5,15 @@
   :point_up_2: This is Ferguson
 </p>
 
+> Note: App is hosted on Heroku but goes to sleep every 30 minutes. Initial loading can take some time.
+
 ## Description
 Ferguson is a lovely housecat for Slack.
 
 ### Features
 - [x] Count the days to an upcoming event (see *[Countdown](#countdown)* section)
-- [ ] Remind the team if an event comes near (see *[Voting](#voting)* section)
-- [x] Start an election to vote for a winner
+- [ ] Remind the team if an event comes near
+- [x] Start an election to vote for a winner (see *[Voting](#voting)* section)
 - [ ] Play a playoff-based tournament with your friends (see *[Games](#games)* section)
 
 
@@ -50,7 +52,7 @@ The one who wins the final game can call oneself an *Amazing Human Slash Genius*
 See the [instructions](docs/games.md) for more information.
 
 
-## Deployment
+## Getting started
 ```
 npm install
 npm start
