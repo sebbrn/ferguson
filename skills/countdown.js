@@ -1,3 +1,5 @@
+const humanizeDuration = require('humanize-duration')
+
 module.exports = function (controller) {
 
     // add event handlers to controller
@@ -87,12 +89,23 @@ function daysLeft(date) {
     if (!(date instanceof Date)) {
         date = new Date(date);
     }
+    const humanized = humanize(date);
     const days = countDays(date);
+
     if (days < 15) {
-        return `_Hooray!_ There are only *${days}* days left! :star-struck:`;
+        return `_Hooray!_ Only *${humanized}* left! :star-struck:`;
     } else {
-        return `There are *${days}* days left! Wow, that's still a loooong time :face_with_rolling_eyes:`;
+        return `*${humanized}* left! Wow, that's still a loooong time :face_with_rolling_eyes:`;
     }
+}
+
+/**
+ * Humanizes the duration between the given Date and the current date.
+ * @param date a Date object
+ * @return {string}
+ */
+function humanize(date) {
+    return humanizeDuration(date - new Date(), { units: ['y', 'm', 'w', 'd'] });
 }
 
 /**
@@ -101,5 +114,5 @@ function daysLeft(date) {
  * @return {number}
  */
 function countDays(date) {
-    return Math.floor((date - new Date()) / (1000 * 60 * 60 * 24));
+  return Math.floor((date - new Date()) / (1000 * 60 * 60 * 24));
 }
