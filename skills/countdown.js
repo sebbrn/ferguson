@@ -105,7 +105,16 @@ function daysLeft(date) {
  * @return {string}
  */
 function humanize(date) {
-    return humanizeDuration(date - new Date(), { units: ['y', 'm', 'w', 'd'] });
+    return humanizeDuration(
+      date - new Date(),
+      {
+        units: ['y','mo', 'w', 'd'],
+        largest: 4,
+        round: true,
+        conjunction: ' and ',
+        serialComma: false
+      }
+    );
 }
 
 /**
