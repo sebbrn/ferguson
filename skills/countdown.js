@@ -90,6 +90,8 @@ function daysLeft(date) {
         date = new Date(date);
     }
     const humanized = humanize(date);
+    const days = countDays(date);
+
     if (days < 15) {
         return `_Hooray!_ Only *${humanized}* left! :star-struck:`;
     } else {
@@ -98,10 +100,19 @@ function daysLeft(date) {
 }
 
 /**
+ * Humanizes the duration between the given Date and the current date.
+ * @param date a Date object
+ * @return {string}
+ */
+function humanize(date) {
+    return humanizeDuration(date - new Date(), { units: ['y', 'm', 'w', 'd'] });
+}
+
+/**
  * Calculates the remaining days to the given date from now on and rounds it down
  * @param date
  * @return {number}
  */
-function humanize(date) {
-    return humanizeDuration(date - new Date(), { units: ['y', 'm', 'w', 'd'] });
+function countDays(date) {
+  return Math.floor((date - new Date()) / (1000 * 60 * 60 * 24));
 }
